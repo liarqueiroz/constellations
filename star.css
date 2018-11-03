@@ -1,0 +1,50 @@
+html, body {
+    margin:0;
+    padding:0;
+    overflow:hidden
+}
+
+svg {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: #000428; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#000428, #004e92); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000428, #004e92); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000428, #004e92); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000428, #004e92); /* Standard syntax */
+}
+
+polygon {
+    fill: #fbedb5;
+}
+
+polygon:hover {
+    filter: brightness(85%);
+}
+
+polyline {
+    stroke-width: 2;
+    stroke: #FCD847;
+}
+
+polyline {
+    fill: none;
+    stroke-dasharray: 3100;
+    stroke-dashoffset: 3100;
+    animation: dash 7s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes gleam {
+  100% {
+    opacity: 0.7;
+  }
+}
